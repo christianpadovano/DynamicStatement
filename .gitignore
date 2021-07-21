@@ -1,0 +1,7 @@
+# Default ignored files
+/DynamicStatement.iws
+
+# Project exclude paths
+/dynamic-statement-builder-hql/target/
+/dynamic-statement-builder-interface/target/
+/dynamic-statement-builder-sql/target/

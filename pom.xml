@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <groupId>com.dynamicstatement</groupId>
+  <artifactId>DynamicStatement</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0</version>
+  <name>Dynamic Statement Package</name>
+  <url>http://maven.apache.org</url>
+
+    <properties>
+        <version.java>11</version.java>
+        <target.version.java>11</target.version.java>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+  <modules>
+
+      <module>dynamic-statement-builder-interface</module>
+      <module>dynamic-statement-builder-sql</module>
+      <module>dynamic-statement-builder-hql</module>
+
+
+  </modules>
+
+
+  
+  <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <!-- To use the plugin goals in your POM or parent POM -->
+
+
+        <pluginManagement>
+           <plugins>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.1</version>
+
+                    <configuration>
+                        <source>${version.java}</source>
+                        <target>${target.version.java}</target>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <showDeprecation>true</showDeprecation>
+                        <compilerArgument>-Xlint:all</compilerArgument>
+                        <showWarnings>true</showWarnings>
+                    </configuration>
+                </plugin>
+               <plugin>
+                   <groupId>org.apache.maven.plugins</groupId>
+                   <artifactId>maven-resources-plugin</artifactId>
+                   <version>3.2.0</version>
+               </plugin>
+
+           </plugins>
+        </pluginManagement>
+
+
+
+
+    </build>
+
+    <dependencyManagement>
+
+          <dependencies>
+
+            <dependency>
+              <groupId>junit</groupId>
+              <artifactId>junit</artifactId>
+              <version>4.10</version>
+              <scope>test</scope>
+            </dependency>
+          </dependencies>
+
+    </dependencyManagement>
+
+
+</project>
