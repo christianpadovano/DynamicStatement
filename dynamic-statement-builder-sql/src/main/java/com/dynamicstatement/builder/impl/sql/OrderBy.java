@@ -3,6 +3,10 @@ package com.dynamicstatement.builder.impl.sql;
 import com.dynamicstatement.builder.base.AOrderBy;
 import com.dynamicstatement.builder.interf.IOrderby;
 
+/**
+ * @author christian padovano
+ * @version 1.0
+ */
 public class OrderBy extends AOrderBy {
 
     /**

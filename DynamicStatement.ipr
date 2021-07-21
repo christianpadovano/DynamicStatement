@@ -1861,6 +1861,9 @@
       <option name="url" value="http://artifactory.aciinfo.local/artifactory/mvn" />
     </remote-repository>
   </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
   <component name="libraryTable">
     <library name="Maven: junit:junit:4.10">
       <CLASSES>

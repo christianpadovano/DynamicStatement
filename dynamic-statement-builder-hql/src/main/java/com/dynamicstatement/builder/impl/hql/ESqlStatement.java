@@ -1,5 +1,9 @@
 package com.dynamicstatement.builder.impl.hql;
 
+/**
+ * @author christian padovano
+ * @version 1.0
+ */
 public enum ESqlStatement {
 
     WHERE(" where"),

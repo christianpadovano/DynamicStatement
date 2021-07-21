@@ -4,6 +4,11 @@ import com.dynamicstatement.builder.base.AOrderBy;
 import com.dynamicstatement.builder.interf.IOrderby;
 import com.dynamicstatement.builder.operator.StandardsOperators;
 
+/**
+ * OrderBy statement implementation
+ * @author c.padovano
+ * @version 1.0
+ */
 public class OrderBy extends AOrderBy {
 
     /**

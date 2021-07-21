@@ -3,6 +3,10 @@ package com.dynamicstatement.builder.base;
 import com.dynamicstatement.builder.interf.IOrderby;
 import com.dynamicstatement.builder.operator.StandardsOperators;
 
+/**
+ * @author christian padovano
+ * @version 1.0
+ */
 public abstract class AOrderBy implements IOrderby {
 
     protected StringBuffer  orderByStatement;
